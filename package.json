@@ -1,0 +1,23 @@
+{
+  "name": "megasena",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "puppeteer": "^13.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/init.js"
+  },
+  "keywords": [
+    "WebScrapper",
+    "Nodejs",
+    "Express",
+    "Puppeter"
+  ],
+  "author": "Ruan Gomes",
+  "license": "ISC"
+}
