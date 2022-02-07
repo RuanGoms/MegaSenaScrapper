@@ -3,7 +3,7 @@ const testPuppeter = require("../services/testPuppeter");
 
 module.exports = routes => {
 
-  routes.get('/testPuppeter', testPuppeter)
+  routes.get('/testPuppeter/:index', testPuppeter)
 
   return routes;
 }
