@@ -18,7 +18,7 @@ async function testPuppeter (req, res) {
 
       const table = document.getElementsByTagName('tbody')[1];
 
-      for (i = 1; i < 2451; i++) {
+      for (i = 1; i < 5616; i++) {
         const row = table.getElementsByTagName('tr')[i];
         let indexRow = row.getElementsByTagName('td')[0];
           
@@ -42,10 +42,12 @@ async function testPuppeter (req, res) {
               },
               date: row.getElementsByTagName('td')[2].innerHTML
             };
-  
             return data;
           }
+        } else {
+          continue;
         }
+
       }
        
     }, index);
