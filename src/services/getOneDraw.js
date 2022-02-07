@@ -1,8 +1,8 @@
 const puppeter = require('puppeteer');
 const config = require('config');
 
-async function testPuppeter (req, res) {
-  console.log('Entrou no testPuppeter');
+async function getOneDraw (req, res) {
+  console.log('Entrou no getOneDraw');
   try {
     const index = req.params.index;
 
@@ -53,6 +53,7 @@ async function testPuppeter (req, res) {
     }, index);
 
     await browser.close();
+    console.log('Saiu do getOneDraw sem erros.')
     res.send({
       result: pageContent
     });
@@ -65,4 +66,4 @@ async function testPuppeter (req, res) {
   
 }
 
-module.exports = testPuppeter;
+module.exports = getOneDraw;

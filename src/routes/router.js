@@ -1,9 +1,9 @@
 const server = require("../server");
-const testPuppeter = require("../services/testPuppeter");
+const getOneDraw = require("../services/getOneDraw");
 
 module.exports = routes => {
 
-  routes.get('/testPuppeter/:index', testPuppeter)
+  routes.get('/testPuppeter/:index', getOneDraw)
 
   return routes;
 }
