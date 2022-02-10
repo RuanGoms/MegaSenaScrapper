@@ -33,7 +33,7 @@ $ npm start
 
 # Exemplo de Requisições com o Insomnia:
   GET Sorteio 150º:
-    http://localhost:3000/sorteio/150
+    http://localhost:3000/sorteio/2000
  
  {
 	"result": {
