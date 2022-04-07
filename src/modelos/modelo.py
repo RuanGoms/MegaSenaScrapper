@@ -41,13 +41,13 @@ lista = {
 #Criar lista com todos os valores do dicionário
 numeros = lista.values()
 lista_numeros = list(numeros)
-print(len(lista_numeros))
-print(lista_numeros)
+# print(len(lista_numeros))
+# print(lista_numeros)
 
-# Fazer uma lista com todos os números, sem repetição.
+# # Fazer uma lista com todos os números, sem repetição.
 lista_correta = set(lista_numeros)
 lista_correta = list(lista_correta)
-print(len(lista_correta))
+# print(len(lista_correta))
 print(lista_correta)
 
 # Sortear 8 números aleatórios da lista
@@ -56,4 +56,6 @@ numeros_sorteados = []
 for i in lista_correta:
     numeros_sorteados.append(random.sample(lista_correta, 8))
 
-print(numeros_sorteados)
+aposta = random.choice(numeros_sorteados)
+aposta = sorted(aposta)
+print(aposta)
